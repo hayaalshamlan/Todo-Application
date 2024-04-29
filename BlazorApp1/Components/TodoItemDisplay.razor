@@ -1,0 +1,12 @@
+﻿
+
+@using BlazorApp1.Model.Entity
+<div>
+    @todoItem.Description (@(todoItem.IsCompleted ? "Completed" : "Underprogress"))
+</div>
+
+@code {
+    [Parameter]  public TodoItem todoItem { get; set; }
+
+}
+

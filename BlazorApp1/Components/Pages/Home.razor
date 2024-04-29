@@ -1,0 +1,16 @@
+﻿@page "/"
+@using BlazorApp1.Model.Entity
+@using BlazorApp1.Components
+
+<PageTitle>Home</PageTitle>
+
+<TodoItemDisplay todoItem="item"></TodoItemDisplay>
+@code {
+    public TodoItem item = new TodoItem
+        {
+            Description = "complete all task",
+            DueDate = DateTime.Now,
+            IsCompleted = false,
+            Id = 1
+        };
+}
